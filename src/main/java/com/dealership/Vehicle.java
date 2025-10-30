@@ -23,22 +23,65 @@ public class Vehicle {
     }
 
     // Getters and setters for all fields
-    public int getVin() { return vin; }
-    public int getYear() { return year; }
-    public String getMake() { return make; }
-    public String getModel() { return model; }
-    public String getType() { return type; }
-    public String getColor() { return color; }
-    public int getOdometer() { return odometer; }
-    public double getPrice() { return price; }
+    public int getVin() {
+        return vin;
+    }
 
-    public void setYear(int year) { this.year = year; }
-    public void setMake(String make) { this.make = make; }
-    public void setModel(String model) { this.model = model; }
-    public void setType(String type) { this.type = type; }
-    public void setColor(String color) { this.color = color; }
-    public void setOdometer(int odometer) { this.odometer = odometer; }
-    public void setPrice(double price) { this.price = price; }
+    public int getYear() {
+        return year;
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public int getOdometer() {
+        return odometer;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setOdometer(int odometer) {
+        this.odometer = odometer;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
 
     @Override
     public String toString() {
