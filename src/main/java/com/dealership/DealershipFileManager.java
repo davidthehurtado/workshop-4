@@ -11,7 +11,7 @@ public class DealershipFileManager {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(fileName));
 
-            // Read first line — dealership info
+            // Reads first line — dealership info
             String firstLine = reader.readLine();
             if (firstLine != null) {
                 String[] parts = firstLine.split("\\|");
@@ -19,10 +19,10 @@ public class DealershipFileManager {
                 String address = parts[1];
                 String phone = parts[2];
 
-                // Create dealership object
+                // Creates dealership object
                 dealership = new Dealership(name, address, phone);
 
-                // Read vehicle lines
+                // Reads vehicle lines
                 String line;
                 while ((line = reader.readLine()) != null) {
                     String[] t = line.split("\\|");
@@ -55,11 +55,11 @@ public class DealershipFileManager {
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, false));
 
-            // Write dealership header line using the new getters
+            // Writes dealership header line using the new getters
             writer.write(d.getName() + "|" + d.getAddress() + "|" + d.getPhone());
             writer.newLine();
 
-            // Write each vehicle
+            // Writes each vehicle
             ArrayList<Vehicle> all = d.getAllVehicles();
             for (Vehicle v : all) {
                 String row = v.getVin() + "|" +
